@@ -5,8 +5,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Watchlist from "./pages/Watchlist.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Watchlist from "./pages/Watchlist/Watchlist.jsx";
 import CommonLayout from "./layout/CommonLayout.jsx";
 
 const router = createBrowserRouter(

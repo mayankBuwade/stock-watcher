@@ -1,0 +1,31 @@
+.searchbar-container {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.search-input {
+  width: 50vw;
+  height: 3rem;
+  padding-left: 16px;
+  border-radius: 0.5rem;
+  border: 2px solid #dcdcdc;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  color: #454545;
+}
+
+.search-input:focus {
+  border: 2px solid #9ded89;
+}
+
+.clear-button {
+  position: absolute;
+  z-index: 2;
+  right: 2%;
+  top: 15px;
+  background: transparent;
+}
+
+.clear-button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.search-presentor-container {
+  width: 50vw;
+}
+
+.data-set-container {
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
