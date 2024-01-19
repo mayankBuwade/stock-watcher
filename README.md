@@ -1,8 +1,31 @@
-# React + Vite
+# Stock-Watcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to Run
 
-Currently, two official plugins are available:
+1. Create a `.env` (dot env) file in the root of the project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Add the following key to the `.env` file:
+
+   ```
+   VITE_ALPHAVANTAGE_KEY=your_alphavantage_api_key
+   ```
+
+   Note: Obtain your API key from [Alpha Vantage](https://www.alphavantage.co/).
+
+3. Install the project dependencies using npm:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the project in development mode:
+
+   ```bash
+   npm run dev
+   ```
+
+   This will start the development server and make the application accessible.
+
+**Note:** Ensure you have obtained the API key from [Alpha Vantage](https://www.alphavantage.co/) and replaced `your_alphavantage_api_key` with the actual API key in the `.env` file.
+
+Feel free to customize the instructions based on any additional setup or configuration steps required for your project.
