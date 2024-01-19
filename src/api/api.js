@@ -14,10 +14,10 @@ const api = {
       }`
     );
 
-    return response;
+    const cleanData = cleanJsonKeys(response.data["Global Quote"]);
+    return { data: cleanData };
   },
   getCompaniesDetails: async (searchedText) => {
-    console.log("api called");
     const response = await instance.get(
       `query?function=SYMBOL_SEARCH&keywords=${searchedText}&apikey=${
         import.meta.env.VITE_ALPHAVANTAGE_KEY

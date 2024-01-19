@@ -12,14 +12,6 @@ const searchDataSlice = createSlice({
   initialState,
   reducers: {
     deleteSearchData: () => initialState,
-    changeStockSaveStatus: (state, action) => {
-      state.results = state.results.map((data) => {
-        if (data.symbol === action.payload) {
-          data.isSaved = !data.isSaved;
-        }
-        return data;
-      });
-    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchData.pending, (state) => {
@@ -39,5 +31,4 @@ const searchDataSlice = createSlice({
 });
 
 export default searchDataSlice.reducer;
-export const { deleteSearchData, changeStockSaveStatus } =
-  searchDataSlice.actions;
+export const { deleteSearchData } = searchDataSlice.actions;

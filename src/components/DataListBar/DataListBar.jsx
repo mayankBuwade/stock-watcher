@@ -1,13 +1,18 @@
 import { useDispatch } from "react-redux";
 import "./DataListBar.css";
-import { changeStockSaveStatus } from "../../redux/slices/searchDataSlice";
-const DataListBar = ({ data }) => {
+import { addStock, deleteStock } from "../../redux/slices/watchlistDataSlice";
+const DataListBar = ({ data, watchlistSymbols }) => {
   const dispatch = useDispatch();
 
-  const handleStatusChange = (symbol) => {
-    dispatch(changeStockSaveStatus(symbol));
+  const handleStatusChange = (isSaved) => {
+    if (isSaved) {
+      dispatch(deleteStock(data.symbol));
+    } else {
+      dispatch(addStock(data));
+    }
   };
 
+  const isSaved = watchlistSymbols.includes(data.symbol);
   return (
     <div className="data-container">
       <div className="company-detail-sec">
@@ -20,9 +25,9 @@ const DataListBar = ({ data }) => {
         </h1>
         <button
           className="add-button"
-          onClick={() => handleStatusChange(data.symbol)}
+          onClick={() => handleStatusChange(isSaved)}
         >
-          {data.isSaved ? "Remove" : "Add"}
+          {isSaved ? "Remove" : "Add"}
         </button>
       </div>
     </div>

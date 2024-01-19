@@ -1,0 +1,61 @@
+.data-container-wl {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  min-width: 450px;
+  width: 800px;
+  margin-bottom: 1rem;
+}
+
+.c-name-wl {
+  font-size: 1.5rem;
+  color: #2f363f;
+  font-weight: 400;
+}
+
+.c-symbol-wl {
+  font-size: 1rem;
+}
+
+.c-price-wl {
+  font-size: 1.25rem;
+}
+
+.remove-button-wl {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  max-width: 8rem;
+  max-width: 6rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+
+  background-color: #f9f871;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.remove-button-wl:not(:disabled):hover {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.company-stock-sec-wl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
