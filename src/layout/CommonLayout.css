@@ -31,3 +31,11 @@
 .active {
   color: #f9f871;
 }
+
+/* Responive Settings */
+@media screen and (max-width: 1440px) {
+  .navbar {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

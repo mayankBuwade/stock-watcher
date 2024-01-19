@@ -29,3 +29,16 @@
 .clear-button:hover {
   cursor: pointer;
 }
+
+/* Responive Settings */
+@media screen and (max-width: 1440px) {
+  .search-input {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .search-input {
+    width: 90vw;
+  }
+}

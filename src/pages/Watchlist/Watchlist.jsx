@@ -18,7 +18,7 @@ const Watchlist = () => {
   }, []);
 
   if (watchlistData.watchlist.length === 0) {
-    return <div>List is empty!!!</div>;
+    return <div className="empty-list">List is empty!!!</div>;
   }
   return (
     <div className="watchlist-container">

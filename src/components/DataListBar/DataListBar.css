@@ -55,4 +55,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  min-width: 8rem;
+}
+
+@media screen and (max-width: 860px) {
+  .c-price {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .c-name {
+    font-size: 1.25rem;
+  }
+
+  .add-button {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
 }
